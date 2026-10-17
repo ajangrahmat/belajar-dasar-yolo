@@ -1,7 +1,7 @@
 from ultralytics import YOLO
-model = YOLO("yolo11n.pt")
+model = YOLO("deteksi-topi.pt")
 
-results = model("kucing.jpg")
+results = model("gambar2.jpg")
 for box in results[0].boxes:
     conf = float(box.conf)
     print(conf)
